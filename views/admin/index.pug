@@ -1,0 +1,17 @@
+form(class=news-form method='post' action='')
+    input(
+        type='text'
+        name='news-name'
+    )
+    <br>
+    textarea(
+        name='news-description'
+    )
+    <br>
+    button(
+        type='submit'
+        name='add_news'
+    ) add
+
+if news
+    #{news}
